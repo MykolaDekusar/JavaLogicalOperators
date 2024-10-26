@@ -21,7 +21,12 @@ public class Main {
 		String answer = scanner.nextLine();
 		//per verificare se due stringhe sono uguali dobbiamo usare il metodo .equals()
 		if(answer.equals("q") || answer.equals("Q") )System.out.println("Sei uscito dal gioco");
-		else System.out.println("Hai sbagliato tasto");
+		else System.out.println("Continua a giocare");
+		
+		//Testiamo il NOT
+		//se non ho premuto q e Q allora continuo a giocare 
+		if(!answer.equals("q")&& !answer.equals("Q"))System.out.println("Continua a giocare");
+		else System.out.println("Sei uscito dal gioco");
 		
 	}
 }
