@@ -1,4 +1,4 @@
-
+import java.util.Scanner;
 public class Main {
 
 	public static void main(String[] args) {
@@ -13,6 +13,15 @@ public class Main {
 		}
 		else if(temperatura <=20 && temperatura >=5) System.out.println("Fa fresco");
 		else if (temperatura >=0 && temperatura <5 ) System.out.println("Fa freddo");
+		
+		//Testiamo l'OR
+		Scanner scanner = new Scanner(System.in);//inizializziamo lo scanner per prendere 
+		//l'input dell'utente
+		System.out.println("Premi q oppure Q per uscire dal gioco");
+		String answer = scanner.nextLine();
+		//per verificare se due stringhe sono uguali dobbiamo usare il metodo .equals()
+		if(answer.equals("q") || answer.equals("Q") )System.out.println("Sei uscito dal gioco");
+		else System.out.println("Hai sbagliato tasto");
+		
 	}
-
 }
