@@ -27,6 +27,6 @@ public class Main {
 		//se non ho premuto q e Q allora continuo a giocare 
 		if(!answer.equals("q")&& !answer.equals("Q"))System.out.println("Continua a giocare");
 		else System.out.println("Sei uscito dal gioco");
-		
+		scanner.close();
 	}
 }
